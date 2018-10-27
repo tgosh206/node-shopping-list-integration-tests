@@ -1,10 +1,7 @@
 const chai = require('chai');
 const chaiHttp = require('chai-http');
-
 const {app, runServer, closeServer} = require('../server');
-
 const should = chai.should();
-
 chai.use(chaiHttp);
 
 
@@ -18,7 +15,7 @@ describe('Recipes', function() {
     return closeServer();
   });
 
-  it('should list recipes on GET', function() {
+  it('should list the recipes on GET', function() {
     // recall that we manually add some recipes to `Recipes`
     // inside `recipesRouter.js`. Later in this course,
     // once we're using a database layer, we'll seed
@@ -44,7 +41,7 @@ describe('Recipes', function() {
       });
   });
 
-  it('should add a recipe on POST', function() {
+  it('should add a new recipe on POST', function() {
     const newRecipe = {
         name: 'coffee', ingredients: ['ground coffee', 'hot water']};
     return chai.request(app)
@@ -61,7 +58,7 @@ describe('Recipes', function() {
       });
   });
 
-  it('should update recipes on PUT', function() {
+  it('should update the recipes on PUT', function() {
 
     const updateData = {
       name: 'foo',
@@ -87,7 +84,7 @@ describe('Recipes', function() {
       });
   });
 
-  it('should delete recipes on DELETE', function() {
+  it('should delete the recipes on DELETE', function() {
     return chai.request(app)
       // first have to get recipes so have `id` for one we want
       // to delete. Note that once we're working with databases later
