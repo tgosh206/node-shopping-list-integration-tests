@@ -86,7 +86,7 @@ describe('Recipes', function() {
 
   it('should delete the recipes on DELETE', function() {
     return chai.request(app)
-      // first have to get recipes so have `id` for one we want
+      // first have to get recipes so have `id` for the one we want
       // to delete. Note that once we're working with databases later
       // in this course, we'll be able get the `id` of an existing instance
       // directly from the database, which will allow us to isolate the DELETE
