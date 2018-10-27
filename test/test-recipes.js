@@ -43,7 +43,7 @@ describe('Recipes', function() {
 
   it('should add a new recipe on POST', function() {
     const newRecipe = {
-        name: 'coffee', ingredients: ['ground coffee', 'hot water']};
+        name: 'pizza', ingredients: ['cheese', 'tomato', 'dough']};
     return chai.request(app)
       .post('/recipes')
       .send(newRecipe)
