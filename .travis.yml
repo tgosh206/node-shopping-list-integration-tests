@@ -1,2 +1,10 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: YhMpO3sznJFo29KzGve08OUiEdYF7IXrRGSoBs/h+yelRZcEXGgWkH9vmPCvCd01yL/MwFovJJOUV9vkTCl8lr0SpqQm32YOC5br8mWzTiDvmauK3t7805in5G8I9ppoT2GW6M5/BpNT00chVdHcmiJl3KhmekLe1BYROGx+QJR5XaBSbLWKEI2c3qioV5qxK0vAvyTfLiUr1bYxDIL4PXdvCA3FeFyHdXkRQ5pnS+71F3wvYd8bqBoUq3p0mwsE3VkBVZZmwASvQEWkUkrG7xXhM+bBxzqNmM9jtUU2DshSWnz7GSrpoI9Uj9O8eDs3/WZcajV6sjQbkOeNCERCWdoBQoAQ3CJn2es0FKHfvW+u7OUtHVcGb7uYamS242IfEr5YsmoGjFVkZx+P2jHLMA6+rSim2hGinZghWSrRHVh7DEtlt/Hg3l2+2l5Uy3y5+gbf4xRZpdcMBwiWZbFP1yVYqkOQlVnfVkCEh6oaYqhCNxXlZOR1BV173pz7ZJb+0cJ+5vBCQ4KTEGUDAiBbZKF2dWDt+GpSET63xUl9vtvpIk/ym81GtQ4IB96HmrFUq68Uz6aHGAJ/bkXFbeA9dxys26ELlMf8Qo/niCem8pPzZJRqD7NKAreyD1RysuJ2JiFb1X1slF3I5mCbYuyO1gdKkZpYSNutLvjEWh21Q9s=
+  app: still-island-93835
+  on: 
+    repo: tgosh206/node-shopping-list-integration-tests
+    branch: tests-for-recipes
